@@ -50,6 +50,5 @@ $totalPrice = calculateTotalPrice($items);
 $modifiedString = formatString($string);
 $evenOddMessage = checkEvenOdd($number);
 
-echo "Total price: $" . $totalPrice;
-echo "\nModified string: " . $modifiedString;
-echo "\n" . $evenOddMessage;
+echo sprintf("Total price: $%.2f\nModified string: %s\n%s", $totalPrice, $modifiedString, $evenOddMessage);
+
